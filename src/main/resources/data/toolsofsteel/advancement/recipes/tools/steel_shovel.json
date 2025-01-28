@@ -5,7 +5,7 @@
         "conditions": {
           "items": [
             {
-              "items": "toolsofsteel:steel"
+              "items": "toolsofsteel:steel_ingot"
             }
           ]
         },
