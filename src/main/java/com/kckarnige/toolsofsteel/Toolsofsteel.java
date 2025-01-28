@@ -7,6 +7,8 @@ import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
@@ -28,5 +30,6 @@ public class Toolsofsteel implements ModInitializer {
         registerResourcePack("visual_tweaks", DEFAULT_ENABLED, Text.translatable("pack.toolsofsteel.visual_tweaks.name"));
         ItemRegister.registerModItems();
         BlockRegister.registerModBlocks();
+        Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, MOD_ID), SteelItemGroup.makeItemGroup());
     }
 }

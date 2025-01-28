@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 public class ItemRegister {
 
     public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new Item.Settings()));
+    public static final Item STEEL_NUGGET = registerItem("steel_nugget", new Item(new Item.Settings()));
     public static final Item DIAMOND_INGOT = registerItem("diamond_ingot", new Item(new Item.Settings()));
 
 
@@ -61,6 +62,8 @@ public class ItemRegister {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
             content.addBefore(Items.COPPER_INGOT,
                     STEEL_INGOT);
+            content.addBefore(Items.GOLD_NUGGET,
+                    STEEL_NUGGET);
             content.addAfter(Items.DIAMOND,
                     DIAMOND_INGOT);
         });

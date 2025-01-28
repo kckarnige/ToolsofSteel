@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:blasting",
+    "category": "misc",
+    "cookingtime": 100,
+    "experience": 0.1,
+    "ingredient": [
+      {
+        "item": "toolsofsteel:steel_pickaxe"
+      },
+      {
+        "item": "toolsofsteel:steel_shovel"
+      },
+      {
+        "item": "toolsofsteel:steel_axe"
+      },
+      {
+        "item": "toolsofsteel:steel_hoe"
+      },
+      {
+        "item": "toolsofsteel:steel_sword"
+      },
+      {
+        "item": "toolsofsteel:steel_helmet"
+      },
+      {
+        "item": "toolsofsteel:steel_chestplate"
+      },
+      {
+        "item": "toolsofsteel:steel_leggings"
+      },
+      {
+        "item": "toolsofsteel:steel_boots"
+      }
+    ],
+    "result": {
+      "id": "toolsofsteel:steel_nugget"
+    }
+  }

@@ -1,6 +1,9 @@
 {
+    "toolsofsteel.itemGroup": "Tools of Steel",
+    
     "item.toolsofsteel.diamond_ingot": "Diamond Ingot",
     "item.toolsofsteel.steel_ingot": "Steel Ingot",
+    "item.toolsofsteel.steel_nugget": "Steel Nugget",
     "block.toolsofsteel.steel_block": "Block of Steel",
 
     "item.toolsofsteel.steel_helmet": "Steel Helmet",
