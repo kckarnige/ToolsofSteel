@@ -43,7 +43,7 @@ public class BlockRegister {
     }
 
     public static void registerModBlocks () {
-        Toolsofsteel.LOGGER.info("[Tools of Steel] Flattening Earth..");
+        Toolsofsteel.LOGGER.info("Flattening Earth..");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {
             content.addAfter(Items.IRON_BLOCK,

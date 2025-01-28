@@ -37,7 +37,7 @@ public class ItemRegister {
     }
 
     public static void registerModItems () {
-        Toolsofsteel.LOGGER.info("[Tools of Steel] Forging metals..");
+        Toolsofsteel.LOGGER.info("Forging metals..");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {
             content.addBefore(Items.GOLDEN_SHOVEL,

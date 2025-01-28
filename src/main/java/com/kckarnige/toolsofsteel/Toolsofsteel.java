@@ -21,7 +21,7 @@ public class Toolsofsteel implements ModInitializer {
     }
 
     public static final String MOD_ID = "toolsofsteel";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    public static final Logger LOGGER = LoggerFactory.getLogger("Tools of Steel");
 
     @Override
     public void onInitialize() {

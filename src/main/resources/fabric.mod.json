@@ -3,9 +3,14 @@
   "id": "toolsofsteel",
   "version": "${version}",
   "name": "Tools of Steel",
-  "description": "Not just another steel mod.",
-  "authors": [],
-  "contact": {},
+  "description": "Not just another steel mod, give tool progression more depth!",
+  "authors": [
+    "KayoticCarnige"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/toolofsteel",
+    "sources": "https://github.com/kckarnige/ToolsofSteel"
+  },
   "license": "GPL-3.0",
   "icon": "assets/toolsofsteel/icon.png",
   "environment": "*",
@@ -27,7 +32,7 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-		"bronze": "*",
+    "bronze": "*",
     "minecraft": "${minecraft_version}"
   }
 }
