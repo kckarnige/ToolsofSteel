@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "toolsofsteel",
+  "version": "${version}",
+  "name": "Tools of Steel",
+  "description": "Not just another steel mod.",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/toolsofsteel/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.kckarnige.toolsofsteel.client.ToolsofsteelClient"
+    ],
+    "main": [
+      "com.kckarnige.toolsofsteel.Toolsofsteel"
+    ]
+  },
+
+  "mixins": [
+    {
+      "config": "toolsofsteel.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+		"bronze": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

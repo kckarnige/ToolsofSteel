@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": [],
+    "base": {
+      "item": "bronze:bronze_chestplate"
+    },
+    "addition": {
+      "item": "toolsofsteel:steel_ingot"
+    },
+    "result": {
+      "count": 1,
+      "id": "toolsofsteel:steel_chestplate"
+    }
+  }

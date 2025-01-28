@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "toolsofsteel:steel_ingot"
+    }
+  },
+  "result": {
+    "id": "toolsofsteel:steel_block"
+  }
+}

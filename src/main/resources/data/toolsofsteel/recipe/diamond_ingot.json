@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "toolsofsteel:steel_ingot"
+    },
+    {
+      "item": "toolsofsteel:steel_ingot"
+    },
+    {
+      "item": "toolsofsteel:steel_ingot"
+    },
+    {
+      "item": "toolsofsteel:steel_ingot"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "toolsofsteel:diamond_ingot"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "item.toolsofsteel.diamond_ingot": "Diamond Ingot",
+    "item.toolsofsteel.steel_ingot": "Steel Ingot",
+    "block.toolsofsteel.steel_block": "Block of Steel",
+
+    "item.toolsofsteel.steel_helmet": "Steel Helmet",
+    "item.toolsofsteel.steel_chestplate": "Steel Chestplate",
+    "item.toolsofsteel.steel_leggings": "Steel Leggings",
+    "item.toolsofsteel.steel_boots": "Steel Boots",
+
+    "item.toolsofsteel.steel_shovel": "Steel Shovel",
+    "item.toolsofsteel.steel_pickaxe": "Steel Pickaxe",
+    "item.toolsofsteel.steel_sword": "Steel Sword",
+    "item.toolsofsteel.steel_axe": "Steel Axe",
+    "item.toolsofsteel.steel_hoe": "Steel Hoe",
+
+    "advancements.husbandry.steel_hoe.description": "Use a steel ingot to upgrade a hoe, then reevalute your life choices",
+    "advancements.husbandry.steel_hoe.name": "Too Dedicated",
+
+    "pack.toolsofsteel.visual_tweaks.name": "Tools of Steel: Diamond Tweaks",
+    "pack.toolsofsteel.visual_tweaks.description": "Diamond tools, now with a steel flair!"
+}
