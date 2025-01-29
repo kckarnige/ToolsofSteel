@@ -16,16 +16,17 @@ public class ItemRegister {
     public static final Item DIAMOND_INGOT = registerItem("diamond_ingot", new Item(new Item.Settings()));
 
 
+    // Taken from AdventureZ's src code
     public static final Item STEEL_HELMET = registerItem("steel_helmet",
-            new ArmorItem(SteelSet.STEEL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(37)).fireproof()));
+            new ArmorItem(SteelSet.STEEL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(26))));
     public static final Item STEEL_CHESTPLATE = registerItem("steel_chestplate",
-            new ArmorItem(SteelSet.STEEL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(37)).fireproof()));
+            new ArmorItem(SteelSet.STEEL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(26))));
     public static final Item STEEL_LEGGINGS = registerItem("steel_leggings",
-            new ArmorItem(SteelSet.STEEL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(37)).fireproof()));
+            new ArmorItem(SteelSet.STEEL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(26))));
     public static final Item STEEL_BOOTS = registerItem("steel_boots",
-            new ArmorItem(SteelSet.STEEL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(37)).fireproof()));
+            new ArmorItem(SteelSet.STEEL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(26))));
 
-
+    // Also taken from AdventureZ's src code
     public static final Item STEEL_SWORD = registerItem((String)"steel_sword", (Item)(new SwordItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(SwordItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 3, -2.8F)))));
     public static final Item STEEL_SHOVEL = registerItem((String)"steel_shovel", (Item)(new ShovelItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(ShovelItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 1.5F, -3.4F)))));
     public static final Item STEEL_PICKAXE = registerItem((String)"steel_pickaxe", (Item)(new PickaxeItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(PickaxeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 1.0F, -3.2F)))));
@@ -40,6 +41,7 @@ public class ItemRegister {
     public static void registerModItems () {
         Toolsofsteel.LOGGER.info("Forging metals..");
 
+        // Based off the Bronze mod's src code
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {
             content.addBefore(Items.GOLDEN_SHOVEL,
                     STEEL_SHOVEL,

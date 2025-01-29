@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.kckarnige.toolsofsteel.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "VanillaToolChanges"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -9,6 +9,7 @@ import static com.kckarnige.toolsofsteel.blocks.BlockRegister.*;
 import static com.kckarnige.toolsofsteel.items.ItemRegister.*;
 
 public class SteelItemGroup {
+    // Based off the Bronze mod's src code
     public static ItemGroup makeItemGroup () {
         return FabricItemGroup.builder()
                 .icon(() -> new ItemStack(STEEL_INGOT))

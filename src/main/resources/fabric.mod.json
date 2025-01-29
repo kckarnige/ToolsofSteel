@@ -24,6 +24,7 @@
   },
 
   "mixins": [
+    "toolsofsteel.mixins.json",
     {
       "config": "toolsofsteel.client.mixins.json",
       "environment": "client"

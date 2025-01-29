@@ -30,7 +30,7 @@ public class BlockRegister {
 
 
     private static void registerBlockItem (String id, Item.Settings item, Block block) {
-        //1.21.2+ block reg sucks
+        //1.21.2+ block reg still sucks, but thank god it's backwards compatible with 1.21
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, id));
         Registry.register(Registries.ITEM, itemKey, new BlockItem(block, item));
     }

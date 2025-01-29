@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class SteelSet {
+    // Taken from the Bronze mod's src code
     public static final RegistryEntry<ArmorMaterial> STEEL = register("toolsofsteel:steel", Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 3);
         map.put(ArmorItem.Type.LEGGINGS, 6);
