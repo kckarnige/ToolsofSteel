@@ -22,33 +22,38 @@ public class VanillaToolChanges {
 
     @Unique
     private static void replaceDiamondMaterial() {
-        if (!MidnightConfigStuff.REMOVE_CHANGES) {
-            try {
-                // Access the material info
-                Field diamondField = ToolMaterials.class.getDeclaredField("DIAMOND");
-                Field netheriteField = ToolMaterials.class.getDeclaredField("NETHERITE");
-                diamondField.setAccessible(true);
-                netheriteField.setAccessible(true);
+        try {
+            // Access the material info
+            Field diamondField = ToolMaterials.class.getDeclaredField("DIAMOND");
+            Field netheriteField = ToolMaterials.class.getDeclaredField("NETHERITE");
+            diamondField.setAccessible(true);
+            netheriteField.setAccessible(true);
 
-                // Make the material info editable
-                ToolMaterials diamondMaterial = (ToolMaterials) diamondField.get(null);
-                ToolMaterials netheriteMaterial = (ToolMaterials) netheriteField.get(null);
+            // Make the material info editable
+            ToolMaterials diamondMaterial = (ToolMaterials) diamondField.get(null);
+            ToolMaterials netheriteMaterial = (ToolMaterials) netheriteField.get(null);
 
+
+
+            if (!MidnightConfigStuff.REMOVE_DURABILITY_CHANGES) {
                 // Access itemDurability variable in ToolMaterials class
                 Field durabilityField = ToolMaterials.class.getDeclaredField("itemDurability");
                 durabilityField.setAccessible(true);
 
+                durabilityField.set(diamondMaterial, 550);
+                durabilityField.set(netheriteMaterial, 650);
+            }
+
+            if (!MidnightConfigStuff.REMOVE_REPAIR_CHANGES) {
                 // Access repairIngredient variable in ToolMaterials class
                 Field repairIngredientField = ToolMaterials.class.getDeclaredField("repairIngredient");
                 repairIngredientField.setAccessible(true);
 
-                durabilityField.set(diamondMaterial, 550);
-                durabilityField.set(netheriteMaterial, 650);
                 repairIngredientField.set(diamondMaterial, (Supplier<Ingredient>) () -> Ingredient.ofStacks(DIAMOND_INGOT.getDefaultStack()));
-
-            } catch (Exception e) {
-                throw new RuntimeException("Failed to replace Diamond and Netherite tool durability", e);
             }
+
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to replace Diamond and Netherite tool durability", e);
         }
     }
 }

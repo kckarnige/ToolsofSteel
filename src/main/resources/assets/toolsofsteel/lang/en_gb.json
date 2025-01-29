@@ -21,13 +21,13 @@
     "advancements.husbandry.steel_hoe.name": "Too Dedicated",
 
     "toolsofsteel.midnightconfig.title": "'Tools of Steel' Config",
-
     "toolsofsteel.midnightconfig.REMOVE_RPS": "Remove Built-in Resource Packs",
     "toolsofsteel.midnightconfig.REMOVE_RPS.tooltip": "Prevents the mod's built-in resource packs from loading. (Restart Required)",
+    "toolsofsteel.midnightconfig.REMOVE_DURABILITY_CHANGES": "Disable Durability Changes",
+    "toolsofsteel.midnightconfig.REMOVE_DURABILITY_CHANGES.tooltip": "(NOT RECOMMENDED) Stops the mod from altering Diamond and Netherite tool durability. (Restart Required)",
+    "toolsofsteel.midnightconfig.REMOVE_REPAIR_CHANGES": "Disable Repair Changes",
+    "toolsofsteel.midnightconfig.REMOVE_REPAIR_CHANGES.tooltip": "(NOT RECOMMENDED) Stops the mod from altering Diamond reapir item. (Restart Required)",
     
-    "toolsofsteel.midnightconfig.REMOVE_CHANGES": "Remove Gameplay Changes",
-    "toolsofsteel.midnightconfig.REMOVE_CHANGES.tooltip": "(NOT RECOMMENDED) Prevents the mod altering Diamond and Netherite tools. (Restart Required)",
-
     "pack.toolsofsteel.visual_tweaks.name": "Tools of Steel: Diamond Tweaks",
     "pack.toolsofsteel.visual_tweaks.description": "Diamond tools, now with a steel flair!"
 }
