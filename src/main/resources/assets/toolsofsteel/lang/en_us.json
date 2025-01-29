@@ -18,7 +18,7 @@
     "item.toolsofsteel.steel_hoe": "Steel Hoe",
 
     "advancements.husbandry.steel_hoe.description": "Use a steel ingot to upgrade a hoe, then reevalute your life choices",
-    "advancements.husbandry.steel_hoe.name": "Too Dedicated",
+    "advancements.husbandry.steel_hoe.title": "Too Dedicated",
 
     "toolsofsteel.midnightconfig.title": "'Tools of Steel' Config",
     "toolsofsteel.midnightconfig.REMOVE_RPS": "Remove Built-in Resource Packs",
