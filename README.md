@@ -30,4 +30,4 @@ A: Of course! This mod was meant for modpacks!
 A: Unless you're in a third-world country, no.
 
 ### Q: There's a bug, how can I report it?
-A: Submit an issue on GitHub! [Click here to do that](https://github.com/kckarnige/ToolsofSteel/labels), or check the "links" tab on Modrinth.
+A: Submit an issue on GitHub! [Click here to do that](https://github.com/kckarnige/ToolsofSteel/issues), or check the "links" tab on Modrinth.
