@@ -20,6 +20,14 @@
     "advancements.husbandry.steel_hoe.description": "Use a steel ingot to upgrade a hoe, then reevalute your life choices",
     "advancements.husbandry.steel_hoe.name": "Too Dedicated",
 
+    "toolsofsteel.midnightconfig.title": "'Tools of Steel' Config",
+
+    "toolsofsteel.midnightconfig.REMOVE_RPS": "Remove Built-in Resource Packs",
+    "toolsofsteel.midnightconfig.REMOVE_RPS.tooltip": "Prevents the mod's built-in resource packs from loading. (Restart Required)",
+    
+    "toolsofsteel.midnightconfig.REMOVE_CHANGES": "Remove Gameplay Changes",
+    "toolsofsteel.midnightconfig.REMOVE_CHANGES.tooltip": "(NOT RECOMMENDED) Prevents the mod altering Diamond and Netherite tools. (Restart Required)",
+
     "pack.toolsofsteel.visual_tweaks.name": "Tools of Steel: Diamond Tweaks",
     "pack.toolsofsteel.visual_tweaks.description": "Diamond tools, now with a steel flair!"
 }

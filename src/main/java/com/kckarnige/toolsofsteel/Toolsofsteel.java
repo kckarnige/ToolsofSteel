@@ -1,7 +1,9 @@
 package com.kckarnige.toolsofsteel;
 
 import com.kckarnige.toolsofsteel.blocks.BlockRegister;
+import com.kckarnige.toolsofsteel.config.MidnightConfigStuff;
 import com.kckarnige.toolsofsteel.items.ItemRegister;
+import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
@@ -17,17 +19,13 @@ import org.slf4j.LoggerFactory;
 import static net.fabricmc.fabric.api.resource.ResourcePackActivationType.*;
 
 public class Toolsofsteel implements ModInitializer {
-    public <string> void registerResourcePack(string Path, ResourcePackActivationType ResourcePackType, Text PackName) {
-        ModContainer container = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow();
-        ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, (String) Path), container, PackName, ResourcePackType);
-    }
 
     public static final String MOD_ID = "toolsofsteel";
     public static final Logger LOGGER = LoggerFactory.getLogger("Tools of Steel");
 
     @Override
     public void onInitialize() {
-        registerResourcePack("visual_tweaks", DEFAULT_ENABLED, Text.translatable("pack.toolsofsteel.visual_tweaks.name"));
+        MidnightConfig.init(MOD_ID, MidnightConfigStuff.class);
         ItemRegister.registerModItems();
         BlockRegister.registerModBlocks();
         Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, MOD_ID), SteelItemGroup.makeItemGroup());
