@@ -7,7 +7,7 @@
 
 This mod focused on making equipment progression better by adding a new material, steel!
 
-> The '[Bronze](https://modrinth.com/mod/bronze)' mod is **required**, as steel tools are upgraded from bronze, and it's recommended you use a progression mod like '[Divergent Progression](https://modrinth.com/mod/divergent-progression)' or '[Slow Your Roll](https://modrinth.com/mod/slow-your-roll)'.
+> The '[Bronze](https://modrinth.com/mod/bronze)' mod is **required**, as steel tools are upgraded from bronze, and it's recommended you use a progression mod like '[Divergent Progression](https://modrinth.com/mod/divergent-progression)' or '[Slow Your Roll](https://modrinth.com/mod/slow-your-roll)'. This mod also changes how Bronze is obtained. Tin ore now requires at least iron-level tools to mine.
 
 This mod mod changes how progression works, requiring you to obtain iron, bronze, and steel tools before accessing diamond.
 
