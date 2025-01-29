@@ -53,7 +53,7 @@ public class VanillaToolChanges {
             }
 
         } catch (Exception e) {
-            throw new RuntimeException("Failed to replace Diamond and Netherite tool durability", e);
+            throw new RuntimeException("[Tools of Steel] Failed to replace Diamond and Netherite tool durability", e);
         }
     }
 }
