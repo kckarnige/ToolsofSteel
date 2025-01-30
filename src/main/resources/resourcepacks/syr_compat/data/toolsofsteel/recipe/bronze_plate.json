@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "bronze:bronze_ingot"
+      }
+    },
+    "result": {
+      "id": "toolsofsteel:bronze_plate"
+    }
+  }
+  

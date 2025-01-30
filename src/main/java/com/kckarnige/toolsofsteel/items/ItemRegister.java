@@ -14,7 +14,9 @@ public class ItemRegister {
     public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new Item.Settings()));
     public static final Item STEEL_NUGGET = registerItem("steel_nugget", new Item(new Item.Settings()));
     public static final Item DIAMOND_INGOT = registerItem("diamond_ingot", new Item(new Item.Settings()));
-
+    public static final Item TIN_NUGGET = registerItem("tin_nugget", new Item(new Item.Settings()));
+    public static Item BRONZE_PLATE = registerItem("bronze_plate", new Item(new Item.Settings()));
+    public static Item STEEL_PLATE = registerItem("steel_plate", new Item(new Item.Settings()));
 
     // Taken from AdventureZ's src code
     public static final Item STEEL_HELMET = registerItem("steel_helmet",
@@ -27,11 +29,11 @@ public class ItemRegister {
             new ArmorItem(SteelSet.STEEL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(26))));
 
     // Also taken from AdventureZ's src code
-    public static final Item STEEL_SWORD = registerItem((String)"steel_sword", (Item)(new SwordItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(SwordItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 3, -2.8F)))));
-    public static final Item STEEL_SHOVEL = registerItem((String)"steel_shovel", (Item)(new ShovelItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(ShovelItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 1.5F, -3.4F)))));
-    public static final Item STEEL_PICKAXE = registerItem((String)"steel_pickaxe", (Item)(new PickaxeItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(PickaxeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 1.0F, -3.2F)))));
-    public static final Item STEEL_AXE = registerItem((String)"steel_axe", (Item)(new AxeItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(AxeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 5.0F, -3.5F)))));
-    public static final Item STEEL_HOE = registerItem((String)"steel_hoe", (Item)(new HoeItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(HoeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, -3.0F, -1.0F)))));
+    public static final Item STEEL_SWORD = registerItem("steel_sword", new SwordItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(SwordItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 3, -2.8F))));
+    public static final Item STEEL_SHOVEL = registerItem("steel_shovel", new ShovelItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(ShovelItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 1.5F, -3.4F))));
+    public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe", new PickaxeItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(PickaxeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 1.0F, -3.2F))));
+    public static final Item STEEL_AXE = registerItem("steel_axe", new AxeItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(AxeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 5.0F, -3.5F))));
+    public static final Item STEEL_HOE = registerItem("steel_hoe", new HoeItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(HoeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, -3.0F, -1.0F))));
 
 
     private static Item registerItem (String name, Item item) {
@@ -65,7 +67,8 @@ public class ItemRegister {
             content.addBefore(Items.COPPER_INGOT,
                     STEEL_INGOT);
             content.addBefore(Items.GOLD_NUGGET,
-                    STEEL_NUGGET);
+                    STEEL_NUGGET,
+                    TIN_NUGGET);
             content.addAfter(Items.DIAMOND,
                     DIAMOND_INGOT);
         });

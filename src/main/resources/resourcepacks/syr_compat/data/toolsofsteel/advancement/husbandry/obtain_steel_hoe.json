@@ -1,0 +1,36 @@
+{
+    "parent": "minecraft:husbandry/plant_seed",
+    "criteria": {
+      "steel_hoe": {
+        "conditions": {
+          "items": [
+            {
+              "items": "toolsofsteel:steel_hoe"
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancements.husbandry.steel_hoe.description"
+      },
+      "frame": "challenge",
+      "icon": {
+        "count": 1,
+        "id": "toolsofsteel:steel_hoe"
+      },
+      "title": {
+        "translate": "advancements.husbandry.steel_hoe.title"
+      }
+    },
+    "requirements": [
+      [
+        "steel_hoe"
+      ]
+    ],
+    "rewards": {
+      "experience": 100
+    }
+  }

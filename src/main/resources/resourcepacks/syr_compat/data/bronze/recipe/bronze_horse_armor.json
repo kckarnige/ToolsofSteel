@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": {
+      "item": "toolsofsteel:bronze_plate"
+    },
+    "A": {
+      "item": "slowyourroll:chainmail_horse_armor"
+    }
+  },
+  "pattern": [
+    "PAP",
+    "PPP",
+    "P P"
+  ],
+  "result": {
+    "id": "bronze:bronze_horse_armor"
+  }
+}

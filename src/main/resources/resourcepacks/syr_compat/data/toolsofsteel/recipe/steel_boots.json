@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": [],
+    "base": {
+      "item": "bronze:bronze_boots"
+    },
+    "addition": {
+      "item": "toolsofsteel:steel_plate"
+    },
+    "result": {
+      "count": 1,
+      "id": "toolsofsteel:steel_boots"
+    }
+  }

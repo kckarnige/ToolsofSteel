@@ -1,6 +1,7 @@
 package com.kckarnige.toolsofsteel;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
@@ -26,11 +27,15 @@ public class SteelItemGroup {
                     entries.add(new ItemStack(STEEL_LEGGINGS));
                     entries.add(new ItemStack(STEEL_BOOTS));
 
+                    entries.add(new ItemStack(TIN_NUGGET));
+                    entries.add(new ItemStack(DIAMOND_INGOT));
                     entries.add(new ItemStack(STEEL_NUGGET));
                     entries.add(new ItemStack(STEEL_INGOT));
                     entries.add(new ItemStack(STEEL_BLOCK));
-
-                    entries.add(new ItemStack(DIAMOND_INGOT));
+                    if (FabricLoader.getInstance().isModLoaded("slowyourroll")) {
+                        entries.add(new ItemStack(STEEL_PLATE));
+                        entries.add(new ItemStack(BRONZE_PLATE));
+                    }
                 }).build();
     }
 }

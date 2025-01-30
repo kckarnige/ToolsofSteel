@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": [],
+    "base": {
+      "item": "toolsofsteel:steel_helmet"
+    },
+    "addition": {
+      "item": "slowyourroll:diamond_plate"
+    },
+    "result": {
+      "count": 1,
+      "id": "minecraft:diamond_helmet"
+    }
+  }

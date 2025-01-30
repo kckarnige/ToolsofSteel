@@ -1,7 +1,11 @@
 {
     "toolsofsteel.itemGroup": "Tools of Steel",
     
+    "item.toolsofsteel.bronze_plate": "Bronze Plate",
+    "item.toolsofsteel.steel_plate": "Steel Plate",
+    
     "item.toolsofsteel.diamond_ingot": "Diamond Ingot",
+    "item.toolsofsteel.tin_nugget": "Tin Nugget",
     "item.toolsofsteel.steel_ingot": "Steel Ingot",
     "item.toolsofsteel.steel_nugget": "Steel Nugget",
     "block.toolsofsteel.steel_block": "Block of Steel",

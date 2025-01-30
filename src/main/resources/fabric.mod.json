@@ -9,7 +9,16 @@
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/toolofsteel",
-    "sources": "https://github.com/kckarnige/ToolsofSteel"
+    "sources": "https://github.com/kckarnige/ToolsofSteel",
+    "issues": "https://github.com/kckarnige/ToolsofSteel/issues"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/mod/toolsofsteel",
+        "modmenu.kofi": "https://ko-fi.com/kckarnige"
+      }
+    }
   },
   "license": "GPL-3.0",
   "icon": "assets/toolsofsteel/icon.png",
@@ -31,10 +40,14 @@
     }
   ],
   "depends": {
-    "fabricloader": ">=${loader_version}",
+    "fabricloader": "*",
     "fabric-api": "*",
     "fabric": "*",
     "bronze": "*",
     "minecraft": "~1.21"
+  },
+  
+  "breaks": {
+    "slowbronze": "*"
   }
 }

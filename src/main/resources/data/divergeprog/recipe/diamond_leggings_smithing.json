@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:air"
+  },
+  "base": {
+    "item": "minecraft:air"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:air"
+  },
+  "template": []
+}

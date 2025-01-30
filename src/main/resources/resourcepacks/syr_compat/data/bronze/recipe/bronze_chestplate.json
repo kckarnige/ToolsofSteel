@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
+      "item": "toolsofsteel:bronze_plate"
+    },
+    "C": {
+      "item": "minecraft:chainmail_chestplate"
+    }
+  },
+  "pattern": [
+    "XCX",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bronze:bronze_chestplate"
+  }
+}
