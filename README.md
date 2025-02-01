@@ -7,7 +7,7 @@
 
 This mod focuses on making equipment progression better by adding a new material, steel!
 
-For more info, check out the Modrinth page!
+For more info, check out the [Modrinth page](https://modrinth.com/mod/tools-of-steel)!
 
 #
 
