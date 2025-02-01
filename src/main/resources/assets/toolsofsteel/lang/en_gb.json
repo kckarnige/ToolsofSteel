@@ -33,5 +33,8 @@
     "toolsofsteel.midnightconfig.REMOVE_REPAIR_CHANGES.tooltip": "(NOT RECOMMENDED) Stops the mod from altering Diamond reapir item. (Restart Required)",
     
     "pack.toolsofsteel.visual_tweaks.name": "Tools of Steel: Diamond Tweaks",
-    "pack.toolsofsteel.visual_tweaks.description": "Diamond tools, now with a steel flair!"
+    "pack.toolsofsteel.visual_tweaks.description": "Diamond tools, now with a steel flair!",
+        
+    "pack.toolsofsteel.consistent_helms.name": "Tools of Steel: The Knows Nose",
+    "pack.toolsofsteel.consistent_helms.description": "Removes the nose guard from helmet items."
 }
