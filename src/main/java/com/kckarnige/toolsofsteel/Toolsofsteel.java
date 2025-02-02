@@ -11,6 +11,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.crash.CrashReport;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,7 +29,34 @@ public class Toolsofsteel implements ModInitializer {
         BlockRegister.registerModBlocks();
         Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, MOD_ID), SteelItemGroup.makeItemGroup());
         if (FabricLoader.getInstance().isModLoaded("slowyourroll")) {
-            PackRegister.registerPack("syr_compat", ALWAYS_ENABLED, Text.literal("SYRCompat"));
+            PackRegister.register("syr_compat", ALWAYS_ENABLED, Text.literal("SYRCompat"));
+            LOGGER.info("Slow and steady..");
+        } else if (FabricLoader.getInstance().isModLoaded("divergeprog")) {
+            PackRegister.register("divprog_compat", ALWAYS_ENABLED, Text.literal("DivProgCompat"));
+            LOGGER.info("Diverging..");
+        }
+        if (FabricLoader.getInstance().isModLoaded("slowyourroll") && FabricLoader.getInstance().isModLoaded("divergeprog")) {
+            if (!MidnightConfigStuff.bypass_crash) {
+                new CrashReport("Quenching can be a delicate process...",
+                        new Throwable("'Slow your Roll' and 'Divergent Progression' cannot be used together!"));
+                LOGGER.error("https://youtu.be/qJI-nRg1WBI?t=60");
+                throw new RuntimeException("\n\n" +
+                        "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n" +
+                        "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n" +
+                        "\n" +
+                        "\n" +
+                        "      'Slow your Roll' and 'Divergent Progression' are incompatible with each other!\n" +
+                        "\n" +
+                        "                            https://youtu.be/qJI-nRg1WBI?t=60\n" +
+                        "\n" +
+                        "                                  Uninstall one of them!\n" +
+                        "\n" +
+                        "                   If you want to bypass this, edit the config file.\n" +
+                        "\n" +
+                        "\n" +
+                        "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n" +
+                        "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+            }
         }
     }
 }

@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-      "bronze:tin_ore_block",
-      "bronze:deepslate_tin_ore_block",
-      "!minecraft:diamond_ore",
-      "!minecraft:deepslate_diamond_ore"
-    ]
-  }

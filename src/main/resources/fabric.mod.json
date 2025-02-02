@@ -24,11 +24,14 @@
   "icon": "assets/toolsofsteel/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "com.kckarnige.toolsofsteel.client.ToolsofsteelClient"
+    "fabric-datagen": [
+      "com.kckarnige.toolsofsteel.utils.datagen.DataGenerator"
     ],
     "main": [
       "com.kckarnige.toolsofsteel.Toolsofsteel"
+    ],
+    "client": [
+      "com.kckarnige.toolsofsteel.client.ToolsofsteelClient"
     ]
   },
 

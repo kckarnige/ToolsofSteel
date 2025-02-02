@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.9-SNAPSHOT'
+    id 'fabric-loom' version '1.8-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -21,6 +21,10 @@ repositories {
     maven {	url "https://maven.terraformersmc.com/" }
 }
 
+fabricApi {
+    configureDataGeneration()
+}
+
 dependencies {
     // To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -28,8 +32,10 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation include ("maven.modrinth:midnightlib:${project.midnightlib_version}")
+    modImplementation ("maven.modrinth:bronze:${project.bronze_version}")
     modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
+    modImplementation include ("maven.modrinth:midnightlib:${project.midnightlib_version}")
+    modImplementation include ("maven.modrinth:trimmed:${project.trimmed_version}+fabric")
 }
 
 processResources {

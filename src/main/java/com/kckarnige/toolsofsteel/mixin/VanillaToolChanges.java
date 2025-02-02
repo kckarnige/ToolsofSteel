@@ -32,12 +32,12 @@ public class VanillaToolChanges {
         ToolMaterials diamondMaterial = ToolMaterials.DIAMOND;
         ToolMaterials netheriteMaterial = ToolMaterials.NETHERITE;
 
-        if (!MidnightConfigStuff.REMOVE_DURABILITY_CHANGES) {
+        if (!MidnightConfigStuff.remove_durability_changes) {
             ((VanillaToolChanges) (Object) diamondMaterial).itemDurability = 550;
             ((VanillaToolChanges) (Object) netheriteMaterial).itemDurability = 650;
         }
 
-        if (!MidnightConfigStuff.REMOVE_REPAIR_CHANGES) {
+        if (!MidnightConfigStuff.remove_repair_changes) {
             ((VanillaToolChanges) (Object) diamondMaterial).repairIngredient = () -> Ingredient.ofStacks(DIAMOND_INGOT.getDefaultStack());
         }
     }

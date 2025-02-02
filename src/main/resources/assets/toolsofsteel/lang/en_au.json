@@ -1,5 +1,33 @@
 {
     "toolsofsteel.itemGroup": "Tools of Steel",
+
+    "advancements.husbandry.steel_hoe.description": "Use a steel ingot to upgrade a hoe, then reevalute your life choices",
+    "advancements.husbandry.steel_hoe.title": "Too Dedicated",
+    
+    "pack.toolsofsteel.visual_tweaks.name": "Tools of Steel: Diamond Tweaks",
+    "pack.toolsofsteel.visual_tweaks.description": "Diamond tools, now with a steel flair!",
+        
+    "pack.toolsofsteel.consistent_helms.name": "Tools of Steel: The Knows Nose",
+    "pack.toolsofsteel.consistent_helms.description": "Removes the nose guard from helmet items.",
+    
+
+    "toolsofsteel.midnightconfig.title": "'Tools of Steel' Config",
+
+    "toolsofsteel.midnightconfig.category.client": "Client",
+    "toolsofsteel.midnightconfig.remove_tweaks_rp": "Remove ''Diamond Tweaks'' Resource Pack",
+    "toolsofsteel.midnightconfig.remove_tweaks_rp.tooltip": "Prevents the respective built-in resource pack from loading. (Restart Required)",
+    "toolsofsteel.midnightconfig.remove_knows_rp": "Remove ''The Knows Nose'' Resource Pack",
+    "toolsofsteel.midnightconfig.remove_knows_rp.tooltip": "Prevents the respective built-in resource pack from loading. (Restart Required)",
+
+    "toolsofsteel.midnightconfig.category.server": "Server",
+    "toolsofsteel.midnightconfig.remove_durability_changes": "Disable Durability Changes",
+    "toolsofsteel.midnightconfig.remove_durability_changes.tooltip": "(NOT RECOMMENDED) Stops the mod from altering Diamond and Netherite tool durability. (Restart Required)",
+    "toolsofsteel.midnightconfig.remove_repair_changes": "Disable Repair Changes",
+    "toolsofsteel.midnightconfig.remove_repair_changes.tooltip": "(NOT RECOMMENDED) Stops the mod from forcing vanilla Diamond equipment repair to use Diamond Ingots instead of Diamonds. (Restart Required)",
+    "toolsofsteel.midnightconfig.bypass_crash": "Disable SYR + DP Crash",
+    "toolsofsteel.midnightconfig.bypass_crash.tooltip": "DO NOT ask for support if something goes wrong!",
+    "toolsofsteel.midnightconfig.danger_zone": "⟞ !! Danger Zone !! ⟝",
+
     
     "item.toolsofsteel.bronze_plate": "Bronze Plate",
     "item.toolsofsteel.steel_plate": "Steel Plate",
@@ -14,27 +42,12 @@
     "item.toolsofsteel.steel_chestplate": "Steel Chestplate",
     "item.toolsofsteel.steel_leggings": "Steel Leggings",
     "item.toolsofsteel.steel_boots": "Steel Boots",
+    "trim_material.toolsofsteel.steel": "Steel Material",
+    "trim_material.toolsofsteel.shiny_diamond": "Shiny Diamond Material",
 
     "item.toolsofsteel.steel_shovel": "Steel Shovel",
     "item.toolsofsteel.steel_pickaxe": "Steel Pickaxe",
     "item.toolsofsteel.steel_sword": "Steel Sword",
     "item.toolsofsteel.steel_axe": "Steel Axe",
-    "item.toolsofsteel.steel_hoe": "Steel Hoe",
-
-    "advancements.husbandry.steel_hoe.description": "Use a steel ingot to upgrade a hoe, then reevalute your life choices",
-    "advancements.husbandry.steel_hoe.title": "Too Dedicated",
-
-    "toolsofsteel.midnightconfig.title": "'Tools of Steel' Config",
-    "toolsofsteel.midnightconfig.REMOVE_RPS": "Remove Built-in Resource Packs",
-    "toolsofsteel.midnightconfig.REMOVE_RPS.tooltip": "Prevents the mod's built-in resource packs from loading. (Restart Required)",
-    "toolsofsteel.midnightconfig.REMOVE_DURABILITY_CHANGES": "Disable Durability Changes",
-    "toolsofsteel.midnightconfig.REMOVE_DURABILITY_CHANGES.tooltip": "(NOT RECOMMENDED) Stops the mod from altering Diamond and Netherite tool durability. (Restart Required)",
-    "toolsofsteel.midnightconfig.REMOVE_REPAIR_CHANGES": "Disable Repair Changes",
-    "toolsofsteel.midnightconfig.REMOVE_REPAIR_CHANGES.tooltip": "(NOT RECOMMENDED) Stops the mod from altering Diamond reapir item. (Restart Required)",
-    
-    "pack.toolsofsteel.visual_tweaks.name": "Tools of Steel: Diamond Tweaks",
-    "pack.toolsofsteel.visual_tweaks.description": "Diamond tools, now with a steel flair!",
-        
-    "pack.toolsofsteel.consistent_helms.name": "Tools of Steel: The Knows Nose",
-    "pack.toolsofsteel.consistent_helms.description": "Removes the nose guard from helmet items."
+    "item.toolsofsteel.steel_hoe": "Steel Hoe"
 }

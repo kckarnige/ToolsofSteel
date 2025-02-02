@@ -12,7 +12,7 @@ import static com.kckarnige.toolsofsteel.Toolsofsteel.MOD_ID;
 
 public class PackRegister {
 
-    public static void registerPack(String Path, ResourcePackActivationType ResourcePackType, Text PackName) {
+    public static void register (String Path, ResourcePackActivationType ResourcePackType, Text PackName) {
         ModContainer container = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow();
         ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, Path), container, PackName, ResourcePackType);
     }

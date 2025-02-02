@@ -11,9 +11,11 @@ public class ToolsofsteelClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        if (!MidnightConfigStuff.REMOVE_RPS) {
-            PackRegister.registerPack("visual_tweaks", ResourcePackActivationType.DEFAULT_ENABLED, Text.translatable("pack.toolsofsteel.visual_tweaks.name"));
-            PackRegister.registerPack("consistent_helms", ResourcePackActivationType.NORMAL, Text.translatable("pack.toolsofsteel.consistent_helms.name"));
+        if (!MidnightConfigStuff.remove_tweaks_rp) {
+            PackRegister.register("visual_tweaks", ResourcePackActivationType.DEFAULT_ENABLED, Text.translatable("pack.toolsofsteel.visual_tweaks.name"));
+        }
+        if (!MidnightConfigStuff.remove_knows_rp) {
+            PackRegister.register("consistent_helms", ResourcePackActivationType.NORMAL, Text.translatable("pack.toolsofsteel.consistent_helms.name"));
         }
     }
 }
