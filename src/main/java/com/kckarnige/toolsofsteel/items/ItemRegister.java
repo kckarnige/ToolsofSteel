@@ -1,7 +1,9 @@
 package com.kckarnige.toolsofsteel.items;
 
 import com.kckarnige.toolsofsteel.Toolsofsteel;
+import com.kckarnige.toolsofsteel.entity.EntityRegister;
 import com.kckarnige.toolsofsteel.items.armor.SteelSet;
+import com.kckarnige.toolsofsteel.items.modItems.Gavel;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -17,8 +19,9 @@ public class ItemRegister {
     public static final Item TIN_NUGGET = registerItem("tin_nugget", new Item(new Item.Settings()));
     public static Item BRONZE_PLATE = registerItem("bronze_plate", new Item(new Item.Settings()));
     public static Item STEEL_PLATE = registerItem("steel_plate", new Item(new Item.Settings()));
+    public static Item GAVEL = registerItem("gavel", new Gavel(new Item.Settings()));
 
-    // Taken from AdventureZ's src code
+    // Sorta taken from AdventureZ's src code
     public static final Item STEEL_HELMET = registerItem("steel_helmet",
             new ArmorItem(SteelSet.STEEL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(26))));
     public static final Item STEEL_CHESTPLATE = registerItem("steel_chestplate",
@@ -28,13 +31,16 @@ public class ItemRegister {
     public static final Item STEEL_BOOTS = registerItem("steel_boots",
             new ArmorItem(SteelSet.STEEL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(26))));
 
-    // Also taken from AdventureZ's src code
-    public static final Item STEEL_SWORD = registerItem("steel_sword", new SwordItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(SwordItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 3, -2.8F))));
-    public static final Item STEEL_SHOVEL = registerItem("steel_shovel", new ShovelItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(ShovelItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 1.5F, -3.4F))));
-    public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe", new PickaxeItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(PickaxeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 1.0F, -3.2F))));
-    public static final Item STEEL_AXE = registerItem("steel_axe", new AxeItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(AxeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 5.0F, -3.5F))));
+    // Also sorta taken from AdventureZ's src code
+    public static final Item BATTLE_AXE = registerItem("steel_battle_axe", new SwordItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(AxeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 7.0F, -3.6F))));
+    public static final Item DIAMOND_BATTLE_AXE = registerItem("diamond_battle_axe", new SwordItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(AxeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 8.0F, -3.4F))));
+    public static final Item STEEL_SWORD = registerItem("steel_sword", new SwordItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(SwordItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 3, -2.6F))));
+    public static final Item STEEL_SHOVEL = registerItem("steel_shovel", new ShovelItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(ShovelItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 1.5F, -3.2F))));
+    public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe", new PickaxeItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(PickaxeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 1.0F, -3.0F))));
+    public static final Item STEEL_AXE = registerItem("steel_axe", new AxeItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(AxeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, 5.0F, -3.4F))));
     public static final Item STEEL_HOE = registerItem("steel_hoe", new HoeItem(SteelToolMaterial.INSTANCE, (new Item.Settings()).attributeModifiers(HoeItem.createAttributeModifiers(SteelToolMaterial.INSTANCE, -3.0F, -1.0F))));
 
+    public static final Item JURY_SPAWN_EGG = registerItem("jury_spawn_egg", new SpawnEggItem(EntityRegister.JURY, 0x5e5e5e,0x5b9564, new Item.Settings()));
 
     private static Item registerItem (String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Toolsofsteel.MOD_ID, name), item);
@@ -56,6 +62,10 @@ public class ItemRegister {
                     STEEL_SWORD);
             content.addBefore(Items.GOLDEN_AXE,
                     STEEL_AXE);
+            content.addAfter(Items.MACE,
+                    BATTLE_AXE);
+            content.addAfter(BATTLE_AXE,
+                    DIAMOND_BATTLE_AXE);
 
             content.addBefore(Items.GOLDEN_HELMET,
                     STEEL_HELMET,
@@ -67,10 +77,14 @@ public class ItemRegister {
             content.addBefore(Items.COPPER_INGOT,
                     STEEL_INGOT);
             content.addBefore(Items.GOLD_NUGGET,
-                    STEEL_NUGGET,
-                    TIN_NUGGET);
+                    TIN_NUGGET,
+                    STEEL_NUGGET);
             content.addAfter(Items.DIAMOND,
                     DIAMOND_INGOT);
         });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(content -> {
+            content.add(JURY_SPAWN_EGG);
+        });
+
     }
 }

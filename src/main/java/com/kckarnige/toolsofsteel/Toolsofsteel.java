@@ -2,10 +2,14 @@ package com.kckarnige.toolsofsteel;
 
 import com.kckarnige.toolsofsteel.blocks.BlockRegister;
 import com.kckarnige.toolsofsteel.config.MidnightConfigStuff;
+import com.kckarnige.toolsofsteel.entity.EntityRegister;
+import com.kckarnige.toolsofsteel.entity.custom.BobEntity;
 import com.kckarnige.toolsofsteel.items.ItemRegister;
+import com.kckarnige.toolsofsteel.utils.LootTableModifier;
 import com.kckarnige.toolsofsteel.utils.PackRegister;
 import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -27,6 +31,11 @@ public class Toolsofsteel implements ModInitializer {
         MidnightConfig.init(MOD_ID, MidnightConfigStuff.class);
         ItemRegister.registerModItems();
         BlockRegister.registerModBlocks();
+        FabricDefaultAttributeRegistry.register(EntityRegister.JURY, BobEntity.createBobttributes());
+
+        if (!MidnightConfigStuff.remove_loot_table_changes) {
+            LootTableModifier.init();
+        }
         Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, MOD_ID), SteelItemGroup.makeItemGroup());
         if (FabricLoader.getInstance().isModLoaded("slowyourroll")) {
             PackRegister.register("syr_compat", ALWAYS_ENABLED, Text.literal("SYRCompat"));

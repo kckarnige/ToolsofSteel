@@ -18,9 +18,13 @@ public class itemTags extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         // Tools
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(STEEL_SWORD);
+                .add(STEEL_SWORD)
+                .add(BATTLE_AXE)
+                .add(DIAMOND_BATTLE_AXE);
         getOrCreateTagBuilder(ItemTags.AXES)
-                .add(STEEL_AXE);
+                .add(STEEL_AXE)
+                .add(BATTLE_AXE)
+                .add(DIAMOND_BATTLE_AXE);
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(STEEL_PICKAXE);
         getOrCreateTagBuilder(ItemTags.SHOVELS)

@@ -6,8 +6,12 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class models extends FabricModelProvider {
 
@@ -28,6 +32,8 @@ public class models extends FabricModelProvider {
         itemModelGenerator.register(ItemRegister.STEEL_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ItemRegister.STEEL_INGOT, Models.GENERATED);
         // Tools
+        itemModelGenerator.register(ItemRegister.BATTLE_AXE, Models.HANDHELD_MACE);
+        itemModelGenerator.register(ItemRegister.DIAMOND_BATTLE_AXE, Models.HANDHELD_MACE);
         itemModelGenerator.register(ItemRegister.STEEL_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemRegister.STEEL_AXE, Models.HANDHELD);
         itemModelGenerator.register(ItemRegister.STEEL_PICKAXE, Models.HANDHELD);
@@ -38,8 +44,11 @@ public class models extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ItemRegister.STEEL_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ItemRegister.STEEL_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ItemRegister.STEEL_BOOTS);
-        // SYR Compat
+        // Misc
+        itemModelGenerator.register(ItemRegister.GAVEL, Models.HANDHELD);
         itemModelGenerator.register(ItemRegister.BRONZE_PLATE, Models.GENERATED);
         itemModelGenerator.register(ItemRegister.STEEL_PLATE, Models.GENERATED);
+        itemModelGenerator.register(ItemRegister.JURY_SPAWN_EGG,
+                new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
     }
 }

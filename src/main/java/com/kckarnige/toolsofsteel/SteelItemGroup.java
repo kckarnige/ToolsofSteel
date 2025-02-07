@@ -32,6 +32,11 @@ public class SteelItemGroup {
                     entries.add(new ItemStack(STEEL_NUGGET));
                     entries.add(new ItemStack(STEEL_INGOT));
                     entries.add(new ItemStack(STEEL_BLOCK));
+
+                    entries.add(new ItemStack(BATTLE_AXE));
+                    entries.add(new ItemStack(DIAMOND_BATTLE_AXE));
+                    entries.add(new ItemStack(GAVEL));
+                    entries.add(new ItemStack(JURY_SPAWN_EGG));
                     if (FabricLoader.getInstance().isModLoaded("slowyourroll")) {
                         entries.add(new ItemStack(STEEL_PLATE));
                         entries.add(new ItemStack(BRONZE_PLATE));

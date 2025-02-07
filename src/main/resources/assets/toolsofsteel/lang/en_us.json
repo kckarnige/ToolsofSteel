@@ -1,9 +1,21 @@
 {
     "toolsofsteel.itemGroup": "Tools of Steel",
 
-    "advancements.husbandry.steel_hoe.description": "Use a steel ingot to upgrade a hoe, then reevalute your life choices",
+    "":"- Advancements -",
     "advancements.husbandry.steel_hoe.title": "Too Dedicated",
+    "advancements.husbandry.steel_hoe.description": "Use a steel ingot to upgrade a hoe, then reevalute your life choices",
     
+    "advancements.adventure.bob_boss_start.title": "Court is now in session!",
+    "advancements.adventure.bob_boss_start.description": "Summon the Jury",
+    
+    "advancements.adventure.bob_boss_died.title": "Guilty!",
+    "advancements.adventure.bob_boss_died.description": "Die to a Juryman",
+
+    "advancements.adventure.bob_boss_defeated.title": "Executioner!",
+    "advancements.adventure.bob_boss_defeated.description": "Kill 3 Jurymen",
+    
+    
+    "":"- Resource Packs -",
     "pack.toolsofsteel.visual_tweaks.name": "Tools of Steel: Diamond Tweaks",
     "pack.toolsofsteel.visual_tweaks.description": "Diamond tools, now with a steel flair!",
         
@@ -11,6 +23,7 @@
     "pack.toolsofsteel.consistent_helms.description": "Removes the nose guard from helmet items.",
     
 
+    "":"- Config -",
     "toolsofsteel.midnightconfig.title": "'Tools of Steel' Config",
 
     "toolsofsteel.midnightconfig.category.client": "Client",
@@ -22,15 +35,19 @@
     "toolsofsteel.midnightconfig.category.server": "Server",
     "toolsofsteel.midnightconfig.remove_durability_changes": "Disable Durability Changes",
     "toolsofsteel.midnightconfig.remove_durability_changes.tooltip": "(NOT RECOMMENDED) Stops the mod from altering Diamond and Netherite tool durability. (Restart Required)",
+    "toolsofsteel.midnightconfig.remove_loot_table_changes": "Disable Loot Table Changes",
+    "toolsofsteel.midnightconfig.remove_loot_table_changes.tooltip": "Stops the mod from adding items to village smith and ancient city loot tables. (Restart Required)",
     "toolsofsteel.midnightconfig.remove_repair_changes": "Disable Repair Changes",
     "toolsofsteel.midnightconfig.remove_repair_changes.tooltip": "(NOT RECOMMENDED) Stops the mod from forcing vanilla Diamond equipment repair to use Diamond Ingots instead of Diamonds. (Restart Required)",
+    "toolsofsteel.midnightconfig.danger_zone": "⟞ !! Danger Zone !! ⟝",
     "toolsofsteel.midnightconfig.bypass_crash": "Disable SYR + DP Crash",
     "toolsofsteel.midnightconfig.bypass_crash.tooltip": "DO NOT ask for support if something goes wrong!",
-    "toolsofsteel.midnightconfig.danger_zone": "⟞ !! Danger Zone !! ⟝",
 
     
+    "":"- Items -",
     "item.toolsofsteel.bronze_plate": "Bronze Plate",
     "item.toolsofsteel.steel_plate": "Steel Plate",
+    "item.toolsofsteel.gavel": "Gavel",
     
     "item.toolsofsteel.diamond_ingot": "Diamond Ingot",
     "item.toolsofsteel.tin_nugget": "Tin Nugget",
@@ -42,12 +59,23 @@
     "item.toolsofsteel.steel_chestplate": "Steel Chestplate",
     "item.toolsofsteel.steel_leggings": "Steel Leggings",
     "item.toolsofsteel.steel_boots": "Steel Boots",
-    "trim_material.toolsofsteel.steel": "Steel Material",
-    "trim_material.toolsofsteel.shiny_diamond": "Shiny Diamond Material",
 
+    "item.toolsofsteel.steel_battle_axe": "Battle Axe",
+    "item.toolsofsteel.diamond_battle_axe": "Diamond Battle Axe",
     "item.toolsofsteel.steel_shovel": "Steel Shovel",
     "item.toolsofsteel.steel_pickaxe": "Steel Pickaxe",
     "item.toolsofsteel.steel_sword": "Steel Sword",
     "item.toolsofsteel.steel_axe": "Steel Axe",
-    "item.toolsofsteel.steel_hoe": "Steel Hoe"
+    "item.toolsofsteel.steel_hoe": "Steel Hoe",
+    
+
+    "":"- Mobs -",
+    "entity.toolsofsteel.jury": "Juryman",
+    "item.toolsofsteel.jury_spawn_egg": "Juryman Spawn Egg",
+    "text.toolsofsteel.judge_attempt": "You must judge in the defendant's homecourt.",
+    
+
+    "":"- Trims -",
+    "trim_material.toolsofsteel.steel": "Steel Material",
+    "trim_material.toolsofsteel.shiny_diamond": "Shiny Diamond Material"
 }
