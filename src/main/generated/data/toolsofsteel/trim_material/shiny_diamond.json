@@ -1,0 +1,9 @@
+{
+  "asset_name": "shiny_diamond",
+  "description": {
+    "color": "#6EDFEC",
+    "translate": "trim_material.toolsofsteel.shiny_diamond"
+  },
+  "ingredient": "toolsofsteel:diamond_ingot",
+  "item_model_index": 0.8
+}

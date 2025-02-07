@@ -1,0 +1,9 @@
+{
+  "asset_name": "steel",
+  "description": {
+    "color": "#48464F",
+    "translate": "trim_material.toolsofsteel.steel"
+  },
+  "ingredient": "toolsofsteel:steel_ingot",
+  "item_model_index": 0.3
+}
