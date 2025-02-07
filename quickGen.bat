@@ -1,1 +1,1 @@
-gradlew runDataGen
+gradlew runDatagen

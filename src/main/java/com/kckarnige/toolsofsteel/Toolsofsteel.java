@@ -3,6 +3,7 @@ package com.kckarnige.toolsofsteel;
 import com.kckarnige.toolsofsteel.blocks.BlockRegister;
 import com.kckarnige.toolsofsteel.config.MidnightConfigStuff;
 import com.kckarnige.toolsofsteel.items.ItemRegister;
+import com.kckarnige.toolsofsteel.utils.LootTableModifier;
 import com.kckarnige.toolsofsteel.utils.PackRegister;
 import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
@@ -27,6 +28,10 @@ public class Toolsofsteel implements ModInitializer {
         MidnightConfig.init(MOD_ID, MidnightConfigStuff.class);
         ItemRegister.registerModItems();
         BlockRegister.registerModBlocks();
+
+        if (!MidnightConfigStuff.remove_loot_table_changes) {
+            LootTableModifier.init();
+        }
         Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, MOD_ID), SteelItemGroup.makeItemGroup());
         if (FabricLoader.getInstance().isModLoaded("slowyourroll")) {
             PackRegister.register("syr_compat", ALWAYS_ENABLED, Text.literal("SYRCompat"));
@@ -34,6 +39,9 @@ public class Toolsofsteel implements ModInitializer {
         } else if (FabricLoader.getInstance().isModLoaded("divergeprog")) {
             PackRegister.register("divprog_compat", ALWAYS_ENABLED, Text.literal("DivProgCompat"));
             LOGGER.info("Diverging..");
+        } else if (FabricLoader.getInstance().isModLoaded("bettercombat")) {
+            PackRegister.register("bettercombat_compat", ALWAYS_ENABLED, Text.literal("BetterCombatCompat"));
+            LOGGER.info("Getting better..");
         }
         if (FabricLoader.getInstance().isModLoaded("slowyourroll") && FabricLoader.getInstance().isModLoaded("divergeprog")) {
             if (!MidnightConfigStuff.bypass_crash) {

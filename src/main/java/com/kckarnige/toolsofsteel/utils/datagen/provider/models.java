@@ -28,6 +28,8 @@ public class models extends FabricModelProvider {
         itemModelGenerator.register(ItemRegister.STEEL_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ItemRegister.STEEL_INGOT, Models.GENERATED);
         // Tools
+        itemModelGenerator.register(ItemRegister.BATTLE_AXE, Models.HANDHELD_MACE);
+        itemModelGenerator.register(ItemRegister.NETHERITE_BATTLE_AXE, Models.HANDHELD_MACE);
         itemModelGenerator.register(ItemRegister.STEEL_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemRegister.STEEL_AXE, Models.HANDHELD);
         itemModelGenerator.register(ItemRegister.STEEL_PICKAXE, Models.HANDHELD);
@@ -38,7 +40,7 @@ public class models extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ItemRegister.STEEL_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ItemRegister.STEEL_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ItemRegister.STEEL_BOOTS);
-        // SYR Compat
+        // Misc
         itemModelGenerator.register(ItemRegister.BRONZE_PLATE, Models.GENERATED);
         itemModelGenerator.register(ItemRegister.STEEL_PLATE, Models.GENERATED);
     }

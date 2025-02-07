@@ -12,6 +12,7 @@ public class MidnightConfigStuff extends MidnightConfig {
 
     @Entry(category = serverCONFIG) public static boolean remove_repair_changes = false;
     @Entry(category = serverCONFIG) public static boolean remove_durability_changes = false;
+    @Entry(category = serverCONFIG) public static boolean remove_loot_table_changes = false;
 
     @Comment(category = serverCONFIG) public static Comment danger_spacer;
 

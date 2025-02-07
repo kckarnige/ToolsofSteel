@@ -1,9 +1,18 @@
 {
     "toolsofsteel.itemGroup": "Tools of Steel",
 
+    "":"- Advancements -",
+    "advancements.husbandry.steel_hoe.title": "More Than Dedicated",
     "advancements.husbandry.steel_hoe.description": "Use a steel ingot to upgrade a hoe, then reevalute your life choices",
-    "advancements.husbandry.steel_hoe.title": "Too Dedicated",
+
+    "advancements.adventure.obtain_battle_axe.title": "Heavy Metal",
+    "advancements.adventure.obtain_battle_axe.description": "Find a battle axe in the ancient cities",
     
+    "advancements.adventure.obtain_netherite_battle_axe.title": "Heavier Metal",
+    "advancements.adventure.obtain_netherite_battle_axe.description": "Upgrade a battle axe with netherite",
+    
+    
+    "":"- Resource Packs -",
     "pack.toolsofsteel.visual_tweaks.name": "Tools of Steel: Diamond Tweaks",
     "pack.toolsofsteel.visual_tweaks.description": "Diamond tools, now with a steel flair!",
         
@@ -11,6 +20,7 @@
     "pack.toolsofsteel.consistent_helms.description": "Removes the nose guard from helmet items.",
     
 
+    "":"- Config -",
     "toolsofsteel.midnightconfig.title": "'Tools of Steel' Config",
 
     "toolsofsteel.midnightconfig.category.client": "Client",
@@ -22,13 +32,16 @@
     "toolsofsteel.midnightconfig.category.server": "Server",
     "toolsofsteel.midnightconfig.remove_durability_changes": "Disable Durability Changes",
     "toolsofsteel.midnightconfig.remove_durability_changes.tooltip": "(NOT RECOMMENDED) Stops the mod from altering Diamond and Netherite tool durability. (Restart Required)",
+    "toolsofsteel.midnightconfig.remove_loot_table_changes": "Disable Loot Table Changes",
+    "toolsofsteel.midnightconfig.remove_loot_table_changes.tooltip": "Stops the mod from adding items to village smith and ancient city loot tables. (Restart Required)",
     "toolsofsteel.midnightconfig.remove_repair_changes": "Disable Repair Changes",
     "toolsofsteel.midnightconfig.remove_repair_changes.tooltip": "(NOT RECOMMENDED) Stops the mod from forcing vanilla Diamond equipment repair to use Diamond Ingots instead of Diamonds. (Restart Required)",
+    "toolsofsteel.midnightconfig.danger_zone": "⟞ !! Danger Zone !! ⟝",
     "toolsofsteel.midnightconfig.bypass_crash": "Disable SYR + DP Crash",
     "toolsofsteel.midnightconfig.bypass_crash.tooltip": "DO NOT ask for support if something goes wrong!",
-    "toolsofsteel.midnightconfig.danger_zone": "⟞ !! Danger Zone !! ⟝",
 
     
+    "":"- Items -",
     "item.toolsofsteel.bronze_plate": "Bronze Plate",
     "item.toolsofsteel.steel_plate": "Steel Plate",
     
@@ -42,12 +55,17 @@
     "item.toolsofsteel.steel_chestplate": "Steel Chestplate",
     "item.toolsofsteel.steel_leggings": "Steel Leggings",
     "item.toolsofsteel.steel_boots": "Steel Boots",
-    "trim_material.toolsofsteel.steel": "Steel Material",
-    "trim_material.toolsofsteel.shiny_diamond": "Shiny Diamond Material",
 
+    "item.toolsofsteel.steel_battle_axe": "Battle Axe",
+    "item.toolsofsteel.netherite_battle_axe": "Netherite Battle Axe",
     "item.toolsofsteel.steel_shovel": "Steel Shovel",
     "item.toolsofsteel.steel_pickaxe": "Steel Pickaxe",
     "item.toolsofsteel.steel_sword": "Steel Sword",
     "item.toolsofsteel.steel_axe": "Steel Axe",
-    "item.toolsofsteel.steel_hoe": "Steel Hoe"
+    "item.toolsofsteel.steel_hoe": "Steel Hoe",
+    
+
+    "":"- Trims -",
+    "trim_material.toolsofsteel.steel": "Steel Material",
+    "trim_material.toolsofsteel.shiny_diamond": "Shiny Diamond Material"
 }

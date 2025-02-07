@@ -1,0 +1,36 @@
+{
+    "parent": "toolsofsteel:adventure/obtain_battle_axe",
+    "criteria": {
+      "has_netherite_battle_axe": {
+        "conditions": {
+          "items": [
+            {
+              "items": "toolsofsteel:netherite_battle_axe"
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancements.adventure.obtain_netherite_battle_axe.description"
+      },
+      "frame": "challenge",
+      "icon": {
+        "count": 1,
+        "id": "toolsofsteel:netherite_battle_axe"
+      },
+      "title": {
+        "translate": "advancements.adventure.obtain_netherite_battle_axe.title"
+      }
+    },
+    "requirements": [
+      [
+        "has_netherite_battle_axe"
+      ]
+    ],
+    "rewards": {
+      "experience": 150
+    }
+  }

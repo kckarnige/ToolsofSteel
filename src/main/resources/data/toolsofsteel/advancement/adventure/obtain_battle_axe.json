@@ -1,0 +1,36 @@
+{
+    "parent": "minecraft:adventure/avoid_vibration",
+    "criteria": {
+      "has_battle_axe": {
+        "conditions": {
+          "items": [
+            {
+              "items": "toolsofsteel:steel_battle_axe"
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancements.adventure.obtain_battle_axe.description"
+      },
+      "frame": "challenge",
+      "icon": {
+        "count": 1,
+        "id": "toolsofsteel:steel_battle_axe"
+      },
+      "title": {
+        "translate": "advancements.adventure.obtain_battle_axe.title"
+      }
+    },
+    "requirements": [
+      [
+        "has_battle_axe"
+      ]
+    ],
+    "rewards": {
+      "experience": 100
+    }
+  }

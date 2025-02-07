@@ -21,17 +21,21 @@ public class SteelItemGroup {
                     entries.add(new ItemStack(STEEL_PICKAXE));
                     entries.add(new ItemStack(STEEL_SHOVEL));
                     entries.add(new ItemStack(STEEL_HOE));
+                    entries.add(new ItemStack(BATTLE_AXE));
+                    entries.add(new ItemStack(NETHERITE_BATTLE_AXE));
 
                     entries.add(new ItemStack(STEEL_HELMET));
                     entries.add(new ItemStack(STEEL_CHESTPLATE));
                     entries.add(new ItemStack(STEEL_LEGGINGS));
                     entries.add(new ItemStack(STEEL_BOOTS));
 
-                    entries.add(new ItemStack(TIN_NUGGET));
+                    entries.add(new ItemStack(STEEL_BLOCK));
+
+                    entries.add(new ItemStack(STEEL_INGOT));
                     entries.add(new ItemStack(DIAMOND_INGOT));
                     entries.add(new ItemStack(STEEL_NUGGET));
-                    entries.add(new ItemStack(STEEL_INGOT));
-                    entries.add(new ItemStack(STEEL_BLOCK));
+                    entries.add(new ItemStack(TIN_NUGGET));
+
                     if (FabricLoader.getInstance().isModLoaded("slowyourroll")) {
                         entries.add(new ItemStack(STEEL_PLATE));
                         entries.add(new ItemStack(BRONZE_PLATE));
