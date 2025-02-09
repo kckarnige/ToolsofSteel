@@ -33,13 +33,22 @@ public class Toolsofsteel implements ModInitializer {
             LootTableModifier.init();
         }
         Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, MOD_ID), SteelItemGroup.makeItemGroup());
+        if (MidnightConfigStuff.vanilla_steel_recipes) {
+            PackRegister.register("vanilla_style_steel", ALWAYS_ENABLED, Text.literal("VanillaStyleSteel"));
+            LOGGER.info("Putting the thing in the thing..");
+        }
+         if (MidnightConfigStuff.revert_diamond_recipes) {
+            PackRegister.register("vanilla_style_diamond", ALWAYS_ENABLED, Text.literal("VanillaStyleDiamond"));
+            LOGGER.info("Polishing gems..");
+        }
         if (FabricLoader.getInstance().isModLoaded("slowyourroll")) {
             PackRegister.register("syr_compat", ALWAYS_ENABLED, Text.literal("SYRCompat"));
             LOGGER.info("Slow and steady..");
         } else if (FabricLoader.getInstance().isModLoaded("divergeprog")) {
             PackRegister.register("divprog_compat", ALWAYS_ENABLED, Text.literal("DivProgCompat"));
             LOGGER.info("Diverging..");
-        } else if (FabricLoader.getInstance().isModLoaded("bettercombat")) {
+        }
+        if (FabricLoader.getInstance().isModLoaded("bettercombat")) {
             PackRegister.register("bettercombat_compat", ALWAYS_ENABLED, Text.literal("BetterCombatCompat"));
             LOGGER.info("Getting better..");
         }

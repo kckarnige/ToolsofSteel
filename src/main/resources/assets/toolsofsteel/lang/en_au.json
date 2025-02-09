@@ -20,22 +20,27 @@
 
     "toolsofsteel.midnightconfig.title": "'Tools of Steel' Config",
 
-    "toolsofsteel.midnightconfig.category.client": "Client",
+    "toolsofsteel.midnightconfig.category.client": "Visual Stuff",
     "toolsofsteel.midnightconfig.remove_tweaks_rp": "Remove ''Diamond Tweaks'' Resource Pack",
     "toolsofsteel.midnightconfig.remove_tweaks_rp.tooltip": "Prevents the respective built-in resource pack from loading. (Restart Required)",
     "toolsofsteel.midnightconfig.remove_knows_rp": "Remove ''The Knows Nose'' Resource Pack",
     "toolsofsteel.midnightconfig.remove_knows_rp.tooltip": "Prevents the respective built-in resource pack from loading. (Restart Required)",
 
-    "toolsofsteel.midnightconfig.category.server": "Server",
+    "toolsofsteel.midnightconfig.category.server": "Gameplay Changes",
+    "toolsofsteel.midnightconfig.vanilla_steel_recipes": "Vanilla Style Steel Crafting Recipe",
+    "toolsofsteel.midnightconfig.vanilla_steel_recipes.tooltip": "Changes the steel recipes to the vanilla style, being crafted the traditional way. (Restart Required)",
+    "toolsofsteel.midnightconfig.revert_diamond_recipes": "Vanilla Style Diamond Crafting Recipe",
+    "toolsofsteel.midnightconfig.revert_diamond_recipes.tooltip": "Changes the diamond crafting recipes back to the vanilla style, but using diamond ingots. (Restart Required)",
     "toolsofsteel.midnightconfig.remove_durability_changes": "Disable Durability Changes",
-    "toolsofsteel.midnightconfig.remove_durability_changes.tooltip": "(NOT RECOMMENDED) Stops the mod from altering Diamond and Netherite tool durability. (Restart Required)",
+    "toolsofsteel.midnightconfig.remove_durability_changes.tooltip": "(NOT RECOMMENDED) Stops the mod from altering diamond and netherite tool durability. (Restart Required)",
     "toolsofsteel.midnightconfig.remove_loot_table_changes": "Disable Loot Table Changes",
-    "toolsofsteel.midnightconfig.remove_loot_table_changes.tooltip": "Stops the mod from adding items to village smith and ancient city loot tables. (Restart Required)",
+    "toolsofsteel.midnightconfig.remove_loot_table_changes.tooltip": "Stops the mod from adding items to village smith and ancient city loot tables. This will make the battle axe impossible to obtain (Restart Required)",
     "toolsofsteel.midnightconfig.remove_repair_changes": "Disable Repair Changes",
-    "toolsofsteel.midnightconfig.remove_repair_changes.tooltip": "(NOT RECOMMENDED) Stops the mod from forcing vanilla Diamond equipment repair to use Diamond Ingots instead of Diamonds. (Restart Required)",
-    "toolsofsteel.midnightconfig.danger_zone": "⟞ !! Danger Zone !! ⟝",
+    "toolsofsteel.midnightconfig.remove_repair_changes.tooltip": "(NOT RECOMMENDED) Stops the mod from forcing vanilla diamond equipment repair to use diamond ingots instead of diamonds. (Restart Required)",
+    
+    "toolsofsteel.midnightconfig.category.advanced": "Advanced",
     "toolsofsteel.midnightconfig.bypass_crash": "Disable SYR + DP Crash",
-    "toolsofsteel.midnightconfig.bypass_crash.tooltip": "DO NOT ask for support if something goes wrong!",
+    "toolsofsteel.midnightconfig.bypass_crash.tooltip": "This is for the people who don't mind compatibility issues. This is for people who know what they are doing.",
 
     
     "item.toolsofsteel.bronze_plate": "Bronze Plate",
