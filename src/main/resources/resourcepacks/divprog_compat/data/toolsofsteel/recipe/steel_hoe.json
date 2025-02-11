@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": [],
+    "base": {
+      "item": "bronze:bronze_hoe"
+    },
+    "addition": {
+      "item": "toolsofsteel:steel_bar"
+    },
+    "result": {
+      "count": 1,
+      "id": "toolsofsteel:steel_hoe"
+    }
+  }

@@ -17,6 +17,7 @@ public class ItemRegister {
     public static final Item DIAMOND_INGOT = registerItem("diamond_ingot", new Item(new Item.Settings()));
     public static final Item TIN_NUGGET = registerItem("tin_nugget", new Item(new Item.Settings()));
     public static Item BRONZE_PLATE = registerItem("bronze_plate", new Item(new Item.Settings()));
+    public static Item STEEL_BAR = registerItem("steel_bar", new Item(new Item.Settings()));
     public static Item STEEL_PLATE = registerItem("steel_plate", new Item(new Item.Settings()));
 
     // Sorta taken from AdventureZ's src code
@@ -79,6 +80,9 @@ public class ItemRegister {
             content.addAfter(Items.DIAMOND,
                     DIAMOND_INGOT);
         });
-
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
+            content.addAfter(STEEL_INGOT,
+                    STEEL_BAR);
+        });
     }
 }

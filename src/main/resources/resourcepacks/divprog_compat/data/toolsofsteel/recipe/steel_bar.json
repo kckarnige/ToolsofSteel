@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": 
+    {
+      "item": "divergeprog:iron_bar"
+    },
+    "C":
+    [
+      {
+        "item": "minecraft:coal"
+      },
+      {
+        "item": "minecraft:charcoal"
+      }
+    ]
+  },
+  "pattern": [
+    "XXX",
+    "   ",
+    "CCC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "toolsofsteel:steel_bar"
+  }
+}

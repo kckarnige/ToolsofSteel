@@ -40,6 +40,9 @@ public class SteelItemGroup {
                         entries.add(new ItemStack(STEEL_PLATE));
                         entries.add(new ItemStack(BRONZE_PLATE));
                     }
+                    if (FabricLoader.getInstance().isModLoaded("divergeprog")) {
+                        entries.add(new ItemStack(STEEL_BAR));
+                    }
                 }).build();
     }
 }

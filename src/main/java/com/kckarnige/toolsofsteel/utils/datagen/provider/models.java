@@ -40,8 +40,9 @@ public class models extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ItemRegister.STEEL_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ItemRegister.STEEL_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ItemRegister.STEEL_BOOTS);
-        // Misc
+        // Misc / Mod Compat Items
         itemModelGenerator.register(ItemRegister.BRONZE_PLATE, Models.GENERATED);
         itemModelGenerator.register(ItemRegister.STEEL_PLATE, Models.GENERATED);
+        itemModelGenerator.register(ItemRegister.STEEL_BAR, Models.GENERATED);
     }
 }

@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": [],
+    "base": {
+      "item": "toolsofsteel:steel_hoe"
+    },
+    "addition": {
+      "item": "divergeprog:diamond_bar"
+    },
+    "result": {
+      "count": 1,
+      "id": "minecraft:diamond_hoe"
+    }
+  }

@@ -28,19 +28,9 @@ public class Toolsofsteel implements ModInitializer {
         MidnightConfig.init(MOD_ID, MidnightConfigStuff.class);
         ItemRegister.registerModItems();
         BlockRegister.registerModBlocks();
-
-        if (!MidnightConfigStuff.remove_loot_table_changes) {
-            LootTableModifier.init();
-        }
         Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, MOD_ID), SteelItemGroup.makeItemGroup());
-        if (MidnightConfigStuff.vanilla_steel_recipes) {
-            PackRegister.register("vanilla_style_steel", ALWAYS_ENABLED, Text.literal("VanillaStyleSteel"));
-            LOGGER.info("Putting the thing in the thing..");
-        }
-         if (MidnightConfigStuff.revert_diamond_recipes) {
-            PackRegister.register("vanilla_style_diamond", ALWAYS_ENABLED, Text.literal("VanillaStyleDiamond"));
-            LOGGER.info("Polishing gems..");
-        }
+        
+        // Mod Compat Checks
         if (FabricLoader.getInstance().isModLoaded("slowyourroll")) {
             PackRegister.register("syr_compat", ALWAYS_ENABLED, Text.literal("SYRCompat"));
             LOGGER.info("Slow and steady..");
@@ -52,6 +42,33 @@ public class Toolsofsteel implements ModInitializer {
             PackRegister.register("bettercombat_compat", ALWAYS_ENABLED, Text.literal("BetterCombatCompat"));
             LOGGER.info("Getting better..");
         }
+
+        // Config checks
+        if (!MidnightConfigStuff.remove_loot_table_changes) {
+            LootTableModifier.init();
+        }
+        if (MidnightConfigStuff.vanilla_steel_recipes) {
+            if (FabricLoader.getInstance().isModLoaded("slowyourroll")) {
+                PackRegister.register("syr_style_steel", ALWAYS_ENABLED, Text.literal("VanillaStyleSteel"));
+            } else if (FabricLoader.getInstance().isModLoaded("divergeprog")) {
+                PackRegister.register("divprog_style_steel", ALWAYS_ENABLED, Text.literal("VanillaStyleSteel"));
+            }  else {
+                PackRegister.register("vanilla_style_steel", ALWAYS_ENABLED, Text.literal("VanillaStyleSteel"));
+            }
+            LOGGER.info("Putting the thing in the thing..");
+        }
+        if (MidnightConfigStuff.revert_diamond_recipes) {
+            if (FabricLoader.getInstance().isModLoaded("slowyourroll")) {
+                PackRegister.register("syr_style_diamond", ALWAYS_ENABLED, Text.literal("VanillaStyleDiamond"));
+            } else if (FabricLoader.getInstance().isModLoaded("divergeprog")) {
+                PackRegister.register("divprog_style_diamond", ALWAYS_ENABLED, Text.literal("VanillaStyleDiamond"));
+            } else {
+                PackRegister.register("vanilla_style_diamond", ALWAYS_ENABLED, Text.literal("VanillaStyleDiamond"));
+            }
+            LOGGER.info("Polishing gems..");
+        }
+
+        // Obligatory crash
         if (FabricLoader.getInstance().isModLoaded("slowyourroll") && FabricLoader.getInstance().isModLoaded("divergeprog")) {
             if (!MidnightConfigStuff.bypass_crash) {
                 new CrashReport("Quenching can be a delicate process...",

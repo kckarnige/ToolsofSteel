@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "toolsofsteel:steel_bar"
+  },
+  "base": {
+    "item": "minecraft:chainmail_chestplate"
+  },
+  "result": {
+    "count": 1,
+    "id": "toolsofsteel:steel_chestplate"
+  },
+  "template": []
+}
