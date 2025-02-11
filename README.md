@@ -2,7 +2,9 @@
 
 #
 
-[![modrinth](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_64h.png)](https://modrinth.com/mod/tools-of-steel) [![kofi-singular](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/kofi-singular_64h.png)](https://ko-fi.com/kckarnige) [![buymeacoffee-singular](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/buymeacoffee-singular_64h.png)](https://www.buymeacoffee.com/kckarnige)
+[![CurseForge](https://img.shields.io/curseforge/dt/1198467?style=flat-square&logo=CurseForge&logoColor=f16436&label=CurseForge&labelColor=1a1a1a&color=f16436)](https://www.curseforge.com/minecraft/mc-mods/tools-of-steel) [![Modrinth Downloads](https://img.shields.io/modrinth/dt/ls9yRycB?style=flat-square&logo=modrinth&logoColor=1bd96a&label=Modrinth&labelColor=16181c&color=1bd96a)](https://modrinth.com/mod/tools-of-steel)
+
+[![modrinth-gallery](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/documentation/modrinth-gallery_64h.png)](https://modrinth.com/mod/tools-of-steel/gallery) [![kofi-singular](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/kofi-singular_64h.png)](https://ko-fi.com/kckarnige) [![buymeacoffee-singular](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/buymeacoffee-singular_64h.png)](https://www.buymeacoffee.com/kckarnige)
 
 
 This mod focuses on making equipment progression better by adding a new material, steel!
