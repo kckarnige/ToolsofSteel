@@ -34,7 +34,7 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation ("maven.modrinth:bronze:${project.bronze_version}")
     modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
-    modImplementation include ("maven.modrinth:midnightlib:${project.midnightlib_version}")
+    modImplementation ("maven.modrinth:midnightlib:${project.midnightlib_version}")
     modImplementation include ("maven.modrinth:trimmed:${project.trimmed_version}+fabric")
 }
 
