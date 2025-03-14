@@ -47,26 +47,6 @@ public class Toolsofsteel implements ModInitializer {
         if (!MidnightConfigStuff.remove_loot_table_changes) {
             LootTableModifier.init();
         }
-        if (MidnightConfigStuff.vanilla_steel_recipes) {
-            if (FabricLoader.getInstance().isModLoaded("slowyourroll")) {
-                PackRegister.register("syr_style_steel", ALWAYS_ENABLED, Text.literal("VanillaStyleSteel"));
-            } else if (FabricLoader.getInstance().isModLoaded("divergeprog")) {
-                PackRegister.register("divprog_style_steel", ALWAYS_ENABLED, Text.literal("VanillaStyleSteel"));
-            }  else {
-                PackRegister.register("vanilla_style_steel", ALWAYS_ENABLED, Text.literal("VanillaStyleSteel"));
-            }
-            LOGGER.info("Putting the thing in the thing..");
-        }
-        if (MidnightConfigStuff.revert_diamond_recipes) {
-            if (FabricLoader.getInstance().isModLoaded("slowyourroll")) {
-                PackRegister.register("syr_style_diamond", ALWAYS_ENABLED, Text.literal("VanillaStyleDiamond"));
-            } else if (FabricLoader.getInstance().isModLoaded("divergeprog")) {
-                PackRegister.register("divprog_style_diamond", ALWAYS_ENABLED, Text.literal("VanillaStyleDiamond"));
-            } else {
-                PackRegister.register("vanilla_style_diamond", ALWAYS_ENABLED, Text.literal("VanillaStyleDiamond"));
-            }
-            LOGGER.info("Polishing gems..");
-        }
 
         // Obligatory crash
         if (FabricLoader.getInstance().isModLoaded("slowyourroll") && FabricLoader.getInstance().isModLoaded("divergeprog")) {

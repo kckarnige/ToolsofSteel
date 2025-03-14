@@ -1,14 +1,21 @@
 {
-    "type": "minecraft:smithing_transform",
-    "template": [],
-    "base": {
-      "item": "toolsofsteel:steel_pickaxe"
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
     },
-    "addition": {
+    "X": {
       "item": "toolsofsteel:diamond_ingot"
-    },
-    "result": {
-      "count": 1,
-      "id": "minecraft:diamond_pickaxe"
     }
+  },
+  "pattern": [
+    "XXX",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond_pickaxe"
   }
+}

@@ -1,14 +1,20 @@
 {
-    "type": "minecraft:smithing_transform",
-    "template": [],
-    "base": {
-      "item": "bronze:bronze_boots"
-    },
-    "addition": {
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
       "item": "toolsofsteel:steel_plate"
     },
-    "result": {
-      "count": 1,
-      "id": "toolsofsteel:steel_boots"
+    "#": {
+      "item": "minecraft:chainmail_boots"
     }
+  },
+  "pattern": [
+    "X#X",
+    "X X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "toolsofsteel:steel_boots"
   }
+}

@@ -1,14 +1,17 @@
 {
-    "type": "minecraft:smithing_transform",
-    "template": [],
-    "base": {
-      "item": "bronze:bronze_helmet"
-    },
-    "addition": {
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
       "item": "toolsofsteel:steel_ingot"
-    },
-    "result": {
-      "count": 1,
-      "id": "toolsofsteel:steel_helmet"
     }
+  },
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "toolsofsteel:steel_helmet"
   }
+}

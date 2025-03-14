@@ -1,14 +1,18 @@
 {
-    "type": "minecraft:smithing_transform",
-    "template": [],
-    "base": {
-      "item": "toolsofsteel:steel_chestplate"
-    },
-    "addition": {
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
       "item": "toolsofsteel:diamond_ingot"
-    },
-    "result": {
-      "count": 1,
-      "id": "minecraft:diamond_chestplate"
     }
+  },
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond_chestplate"
   }
+}

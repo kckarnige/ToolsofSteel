@@ -1,14 +1,17 @@
 {
-    "type": "minecraft:smithing_transform",
-    "template": [],
-    "base": {
-      "item": "toolsofsteel:steel_boots"
-    },
-    "addition": {
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
       "item": "toolsofsteel:diamond_ingot"
-    },
-    "result": {
-      "count": 1,
-      "id": "minecraft:diamond_boots"
     }
+  },
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond_boots"
   }
+}

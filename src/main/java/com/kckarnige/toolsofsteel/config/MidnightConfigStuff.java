@@ -11,8 +11,6 @@ public class MidnightConfigStuff extends MidnightConfig {
     @Entry(category = clientCONFIG) public static boolean remove_knows_rp = false;
 
 
-    @Entry(category = serverCONFIG) public static boolean vanilla_steel_recipes = false;
-    @Entry(category = serverCONFIG) public static boolean revert_diamond_recipes = false;
     @Entry(category = serverCONFIG) public static boolean remove_repair_changes = false;
     @Entry(category = serverCONFIG) public static boolean remove_durability_changes = false;
     @Entry(category = serverCONFIG) public static boolean remove_loot_table_changes = false;

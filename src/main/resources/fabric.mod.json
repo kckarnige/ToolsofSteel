@@ -46,7 +46,7 @@
     "fabricloader": "*",
     "fabric-api": "*",
     "fabric": "*",
-    "bronze": "*",
+    "bronze": ">=2.0.0",
     "minecraft": "~1.21"
   },
   

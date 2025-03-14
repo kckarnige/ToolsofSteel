@@ -1,14 +1,21 @@
 {
-    "type": "minecraft:smithing_transform",
-    "template": [],
-    "base": {
-      "item": "bronze:bronze_shovel"
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
     },
-    "addition": {
+    "X": {
       "item": "toolsofsteel:steel_bar"
-    },
-    "result": {
-      "count": 1,
-      "id": "toolsofsteel:steel_shovel"
     }
+  },
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "toolsofsteel:steel_shovel"
   }
+}
